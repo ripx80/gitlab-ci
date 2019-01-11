@@ -1,0 +1,19 @@
+version: "3.3"
+services:
+  gitlab:
+    image: ripx80/gitlab-ce-prod:latest
+    volumes:
+      - logs:/var/log/gitlab
+      - data:/var/opt/gitlab
+      - config:/etc/gitlab
+      - backups:/var/opt/gitlab/backups
+    restart: always    
+
+volumes:
+  data:
+  logs:  
+  config:
+  backups:
+
+
+      

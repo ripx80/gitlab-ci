@@ -1,0 +1,7 @@
+version: "3.3"
+services:
+  gitlab:
+    image: gitlab/gitlab-ce:latest
+    container_name: gitlab    
+    volumes:
+      - ./ssl:/etc/ssl/certs/gitlab:ro      
